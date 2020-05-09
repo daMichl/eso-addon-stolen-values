@@ -1,0 +1,37 @@
+<GuiXml>
+  <Font name="ZoFontGameMini" font="$(BOLD_FONT)|$(KB_25)|soft-shadow-thin" />
+
+  <Controls>
+    <TopLevelControl name="StolenValuesIndicator" mouseEnabled="true" movable="true">
+        <Dimensions x="90" y="31" />
+        <Anchor point="BOTTOM" relativeTo="GuiRoot" relativePoint="CENTER" offsetY="-40" />
+   
+      <OnMoveStop>
+        StolenValues.OnIndicatorMoveStop()
+      </OnMoveStop>
+
+        <Controls>
+
+          <Backdrop name="$(parent)BG" edgeColor="000000" centerColor="000000" alpha="0.4">
+            <AnchorFill />
+             <Edge edgeSize="1" />
+          </Backdrop>
+
+
+            <Texture name="$(parent)_IconStole" textureFile="EsoUI/Art/Inventory/inventory_stolenItem_icon.dds">
+              <Anchor point="LEFT" relativeTo="$(parent)" relativePoint="LEFT" offsetX="2" />
+              <Dimensions x="30" y="30" />
+            </Texture>
+            <Texture name="$(parent)_IconGold" textureFile="esoui/art/currency/currency_gold_32.dds">
+              <Anchor point="LEFT" relativeTo="$(parent)" relativePoint="LEFT" offsetY="6" offsetX="1" />
+              <Dimensions x="19" y="19" />
+            </Texture>
+            <Label name="$(parent)_Label" width="200" height="20" font="ZoFontGameMini" inheritAlpha="true" color="FFF000"
+                wrapMode="TRUNCATE" verticalAlignment="CENTER" horizontalAlignment="RIGHT" text="XXX">
+              <Anchor point="RIGHT" relativeTo="$(parent)" relativePoint="RIGHT" offsetX="-2" offsetY="-1" />
+            </Label>
+
+        </Controls>
+    </TopLevelControl>
+  </Controls>
+</GuiXml>

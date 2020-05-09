@@ -1,0 +1,9 @@
+## Title: StolenValues
+## Description: Shows the value of currently stolen goods including available bonuses.
+## Author: BreznSalza
+## APIVersion: 100018
+## Version: 2.1
+## SavedVariables: StolenValuesSavedVariables
+
+StolenValues.xml
+main.lua
